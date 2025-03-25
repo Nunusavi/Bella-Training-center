@@ -7,9 +7,9 @@ const footer_data = [
     cls: "col-xl-2",
     footer_col: "footer-col-1",
     links: [
-      { name: "About Us", link: "/about" },
       { name: "Blog", link: "/blog" },
-      { name: "Instructors", link: "/instructors" },
+      { name: "About Us", link: "/about" },
+      { name: "Instructors", link: "/instructor" },
       { name: "Rules and Regulations", link: "/" },
     ],
   },
@@ -19,10 +19,8 @@ const footer_data = [
     cls: "col-xl-3",
     footer_col: "footer-col-2",
     links: [
-      { name: "Policies", link: "/policy" },
-      { name: "Documentation", link: "/documentation" },
-      { name: "Chat online", link: "/chat-online" },
-      { name: "Privacy Policy", link: "/privacy-policy" },
+      { name: "Policies", link: "/" },
+      { name: "Privacy Policy", link: "/" },
     ],
   },
   {
@@ -34,7 +32,7 @@ const footer_data = [
       { name: "Contact us", link: "/contact" },
       { name: "Whatsapp", link: "/whatsapp" },
       { name: "Telegram", link: "/telegram" },
-      { name: "Ticketing", link: "/ticketing" },
+      { name: "FAQ", link: "/faq" },
     ],
   },
 ];

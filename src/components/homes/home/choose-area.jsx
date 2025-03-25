@@ -31,9 +31,6 @@ const ChooseArea = () => {
         className="choose-area pt-90 pb-90 wow fadeInUp"
         data-wow-duration=".8s"
         data-wow-delay=".4s"
-        style={{
-          backgroundColor: "rgb(139, 30, 39)",
-        }}
       >
         <div className="container">
           <div className="row align-items-center">
