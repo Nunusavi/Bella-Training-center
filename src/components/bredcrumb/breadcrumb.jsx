@@ -1,0 +1,42 @@
+import Link from "next/link";
+import React from "react";
+
+const Breadcrumb = ({ title, subtitle, isDbbl = "" }) => {
+  return (
+    <section
+      className="breadcrumb__area include-bg pt-150 pb-150 breadcrumb__overlay"
+      style={{
+        backgroundColor: "rgb(139, 30, 39)",
+      }}
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-10">
+            <div className="breadcrumb__content p-relative z-index-1">
+              <h3 className="breadcrumb__title mb-10">{title}</h3>
+              <div className="breadcrumb__list">
+                <span>
+                  <Link href="/">Home</Link>
+                </span>
+                <span className="dvdr">
+                  <i className="fa-regular fa-angle-right"></i>
+                </span>
+                {isDbbl && (
+                  <>
+                    <span className="sub-page-black">{isDbbl}</span>
+                    <span className="dvdr">
+                      <i className="fa-regular fa-angle-right"></i>
+                    </span>
+                  </>
+                )}
+                <span className="sub-page-black">{subtitle}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Breadcrumb;
