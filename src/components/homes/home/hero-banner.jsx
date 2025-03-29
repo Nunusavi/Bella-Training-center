@@ -2,21 +2,21 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const slogans = [
-  "Your story, your vision—master the art of filmmaking.",
-  "Every story deserves to be seen—learn to bring yours to life.",
-  "Lights, camera, storytelling—master the craft of cinema.",
-  "Your vision, our training—become a cinematic storyteller.",
-  "Film is the language of dreams—learn to speak it fluently.",
-  "Every frame tells a story—become a master of visual storytelling.",
-  "Your creativity, our expertise—turn your passion into film.",
-  "From script to screen—learn to create unforgettable cinema.",
-  "Unleash your storytelling power—film the future.",
-  "The world needs your story—learn to tell it through film.",
-  "From imagination to the big screen—unlock your filmmaking potential.",
+  "Your story, your vision master the art of filmmaking.",
+  "Every story deserves to be seen learn to bring yours to life.",
+  "Lights, camera, storytelling master the craft of cinema.",
+  "Your vision, our training become a cinematic storyteller.",
+  "Film is the language of dreams learn to speak it fluently.",
+  "Every frame tells a story become a master of visual storytelling.",
+  "Your creativity, our expertise turn your passion into film.",
+  "From script to screen learn to create unforgettable cinema.",
+  "Unleash your storytelling power film the future.",
+  "The world needs your story learn to tell it through film.",
+  "From imagination to the big screen unlock your filmmaking potential.",
   "Write it. Film it. Master it.",
-  "Every filmmaker starts with a story—start yours today.",
-  "Storytelling is an art—learn to paint with film.",
-  "Every frame tells a story—learn to make yours unforgettable.",
+  "Every filmmaker starts with a story start yours today.",
+  "Storytelling is an art learn to paint with film.",
+  "Every frame tells a story learn to make yours unforgettable.",
 ];
 
 const HeroBanner = () => {
@@ -43,9 +43,9 @@ const HeroBanner = () => {
                   className="hero-content"
                   style={{ animation: "slideInLeft 1s ease-out" }}
                 >
-                  <span>Learn New Skills & Popular Courses</span>
-                  <h2 className="hero-title mb-35" key={currentSlogan} style={{ animation: "fadeIn 1s ease-in-out" }}>
-                   {slogans[currentSlogan]}.
+                  <span>New Skills & Popular Courses</span>
+                  <h2 className="hero-title mb-35" key={currentSlogan} style={{ animation: "fadeIn 1s ease-in-out", fontFamily: "cursive" }}>
+                   {slogans[currentSlogan]}
                   </h2>
                   {/* <p
                     key={currentSlogan}
