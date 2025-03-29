@@ -44,15 +44,15 @@ const HeroBanner = () => {
                   style={{ animation: "slideInLeft 1s ease-out" }}
                 >
                   <span>Learn New Skills & Popular Courses</span>
-                  <h2 className="hero-title mb-35">
-                    For Every Student, Every <i>Classroom</i>.
+                  <h2 className="hero-title mb-35" key={currentSlogan} style={{ animation: "fadeIn 1s ease-in-out" }}>
+                   {slogans[currentSlogan]}.
                   </h2>
-                  <p
+                  {/* <p
                     key={currentSlogan}
                     style={{ animation: "fadeIn 1s ease-in-out" }}
                   >
                     {slogans[currentSlogan]}
-                  </p>
+                  </p> */}
                   <div className="tp-banner-btn">
                     <Link href="/course-list" className="tp-btn">
                       Explore Courses
