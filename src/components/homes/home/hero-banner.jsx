@@ -29,82 +29,87 @@ const HeroBanner = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
-  return (
-    <>
+return (
+   <>
       <section className="banner-area fix p-relative">
-        <div
-          className="banner-bg"
-          style={{ backgroundColor: "rgb(139, 30, 39)" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-6 col-lg-6 col-md-8">
-                <div
-                  className="hero-content"
-                  style={{ animation: "slideInLeft 1s ease-out" }}
-                >
-                  <span>New Skills & Popular Courses</span>
-                  <h2 className="hero-title mb-35" key={currentSlogan} style={{ animation: "fadeIn 1s ease-in-out", fontFamily: "cursive" }}>
-                   {slogans[currentSlogan]}
-                  </h2>
-                  {/* <p
-                    key={currentSlogan}
-                    style={{ animation: "fadeIn 1s ease-in-out" }}
-                  >
-                    {slogans[currentSlogan]}
-                  </p> */}
-                  <div className="tp-banner-btn">
-                    <Link href="/course-list" className="tp-btn">
-                      Explore Courses
-                    </Link>
+         <div
+            className="banner-bg"
+            style={{ backgroundColor: "rgb(139, 30, 39)" }}
+         >
+            <div className="container">
+               <div className="row">
+                  <div className="col-xl-6 col-lg-6 col-md-8">
+                     <div
+                        className="hero-content"
+                        style={{ animation: "slideInLeft 1s ease-out" }}
+                     >
+                        <span>
+                           New Skills & Popular Courses
+                        </span>
+                        <h2
+                           className="hero-title mb-35"
+                           key={currentSlogan}
+                           style={{
+                              animation: "fadeIn 5s ease-in-out",
+                              fontFamily: "'Delius', cursive",
+                           }}
+                        >
+                           {slogans[currentSlogan]}
+                        </h2>
+                        <div className="tp-banner-btn">
+                           <Link href="/course-list" className="tp-btn">
+                              Explore Courses
+                           </Link>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-xl-6 col-lg-6 col-md-6 mt-200">
-                <img
-                  src="/assets/img/banner/p2.png"
-                  alt="banner-shape"
-                  className=""
-                  style={{ animation: "slideIn 1s ease-out" }}
-                />
-              </div>
-              <div className="banner-shape d-none d-lg-block"></div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 mt-200">
+                     <img
+                        src="/assets/img/banner/p2.png"
+                        alt="banner-shape"
+                        className=""
+                        style={{ animation: "slideIn 1s ease-out" }}
+                     />
+                  </div>
+                  <div className="banner-shape d-none d-lg-block"></div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </section>
       <style jsx>{`
-        @keyframes slideIn {
-          from {
-            transform: translateX(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        @keyframes slideInLeft {
-          from {
-            transform: translateY(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
+         @import url('https://fonts.googleapis.com/css2?family=Delius:wght@400;500;600;700&display=swap');
+
+         @keyframes slideIn {
+            from {
+               transform: translateX(100%);
+               opacity: 0;
+            }
+            to {
+               transform: translateX(0);
+               opacity: 1;
+            }
+         }
+         @keyframes fadeIn {
+            from {
+               opacity: 0;
+            }
+            to {
+               opacity: 1;
+            }
+         }
+         @keyframes slideInLeft {
+            from {
+               transform: translateY(100%);
+               opacity: 0;
+            }
+            to {
+               transform: translateY(0);
+               opacity: 1;
+            }
+         }
       `}</style>
-    </>
-  );
+   </>
+);
 };
 
 export default HeroBanner;
