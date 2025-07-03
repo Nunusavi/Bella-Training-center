@@ -34,7 +34,7 @@ return (
       <section className="banner-area fix p-relative">
          <div
             className="banner-bg"
-            style={{ backgroundColor: "rgb(139, 30, 39)" }}
+            style={{ backgroundColor: "rgb(0,0,0)" }}
          >
             <div className="container">
                <div className="row">

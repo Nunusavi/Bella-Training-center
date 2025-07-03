@@ -107,7 +107,7 @@ const TestimonialAreaThree = ({style_about}) => {
             <div className="row">
                <div className="col-lg-12">
                   <div className="section-title text-center mb-65">
-                     <span className={`${style_about ? "tp-sub-title-box" : "tp-bline-stitle"} mb-15`}>Testimonial</span>
+                     <span className={`${style_about ? "tp-sub-title-box" : "tp-bline-stitle"} mb-15`}></span>
                      <h2 className="tp-section-title mb-20">What Our Happy Users Says</h2>
                   </div>
                </div>
